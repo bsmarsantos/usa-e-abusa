@@ -1,0 +1,51 @@
+<%- include('./partials/_header.ejs') %>
+
+<%- include('./partials/_navbar.ejs') %>
+
+<%- include('./partials/_virus.ejs') %>
+
+<%- include('./partials/modals/_modalVideo') %>
+<%- include('./partials/modals/_modalSintomas') %>
+<%- include('./partials/modals/_modalTransmissao') %>
+<%- include('./partials/modals/_modalLuvas') %>
+<%- include('./partials/modals/_modalMascara') %>
+<%- include('./partials/modals/_modalDonation') %>
+
+<div class="container">        
+    <div class="section section-slideshow">
+        <div class="container">
+            <div class="row">
+                <div class="col-11 col-sm-11 col-md-8 col-lg-8 col-xl-8">
+                    <div class="owl-carousel owl-theme owl-main">
+                        <div>
+                            <h2>COVID</h2>
+                            <p>A covid-19 é uma infeção provocada pelo virus SARAS-CoV-2, pertencente à familia Coronaviridae</p>
+                        </div>
+                        <div>
+                            <h2>EPI</h2>
+                            <p>É qualquer equipamento usado como barreira protetora, com o objetivo de proteger as mucosas, a pele e a roupa do contacto com agentes infeciosos</p>
+                        </div>
+                        <div>
+                            <h2>Recomendações</h2>
+                            <p>Quando fores te encontrar com os teus amidos, não te esqueças de mantes uma distância de 2 metros</p>
+                        </div>
+                        <div>
+                            <h2>O Movimento</h2>
+                            <p>Perante este novo inimigo comum temos que lutar por nós e pelos nossos, os esforços unem-se e é assim que nasce o nosso movimento</p>                    
+                        </div>
+                    </div>
+                    <a href="#" id="owl-btn" class="owl-btn btn btn-primary">Saber Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./partials/sections/_sectionInicio') %>
+    <%- include('./partials/sections/_sectionSintomas') %>
+    <%- include('./partials/sections/_sectionTransmissao') %>
+    <%- include('./partials/sections/_sectionEPI') %>
+    <%- include('./partials/sections/_sectionMovimento') %>
+ 
+</div>
+
+<%- include('./partials/_footer.ejs') %>

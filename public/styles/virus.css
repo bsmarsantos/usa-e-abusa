@@ -1,0 +1,258 @@
+.virus-azul-claro {
+    fill: var(--azul-claro);
+}
+
+.virus-azul-escuro {
+    fill: var(--azul-escuro);
+}
+
+.virus-op50 {
+    opacity: 0.5;
+}
+
+.virus-20 {
+    min-width: 20rem;
+    width: 20vw;
+    max-width: 40rem;
+    height: auto;
+}
+
+.virus-15 {
+    min-width: 15rem;
+    width: 15vw;
+    max-width: 30rem;
+    height: auto;
+}
+
+.virus-10 {
+    min-width: 10rem;
+    width: 10vw;
+    max-width: 20rem;
+    height: auto;
+}
+
+.virus-8 {
+    min-width: 8rem;
+    width: 8vw;
+    max-width: 16rem;
+    height: auto;
+}
+
+.virus-5 {
+    min-width: 5rem;
+    width: 5vw;
+    max-width: 10rem;
+    height: auto;
+}
+
+.virus-3 {
+    min-width: 3rem;
+    width: 3vw;
+    max-width: 6rem;
+    height: auto;
+}
+
+.virus-svg {
+    position: absolute;
+    z-index: -1;
+}
+
+/* POSITIONS */
+#virus1 {
+    top: 5rem;
+    left: 55vw;
+}
+
+#virus2 {
+    top: 35rem;
+    left: 80vw;
+}
+
+#virus3 {
+    top: 60rem;
+    left: 65vw;
+}
+
+#virus4 {
+    top: 65rem;
+    left: 10vw;
+}
+
+#virus5 {
+    top: 80rem;
+    left: 40vw;
+}
+
+#virus6 {
+    top: 95rem;
+    left: 80vw;
+}
+
+#virus7 {
+    top: 107rem;
+    left: 65vw;
+}
+
+#virus8 {
+    top: 125rem;
+    left: 10vw;
+}
+
+#virus9 {
+    top: 140rem;
+    left: 75vw;
+}
+
+#virus10 {
+    top: 155rem;
+    left: 30vw;
+}
+
+#virus11 {
+    top: 195rem;
+    left: 75vw;
+}
+
+#virus12 {
+    top: 205rem;
+    left: 20vw;
+}
+
+#virus13 {
+    top: 220rem;
+    left: 30vw;
+}
+
+#virus14 {
+    top: 225rem;
+    left: 65vw;
+}
+
+#virus15 {
+    top: 240rem;
+    left: 10vw;
+}
+
+#virus16 {
+    top: 255rem;
+    left: 16vw;
+}
+
+#virus17 {
+    top: 275rem;
+    left: 32vw;
+}
+
+#virus18 {
+    top: 290rem;
+    left: 75vw;
+}
+
+#virus19 {
+    top: 305rem;
+    left: 45vw;
+}
+
+#virus20 {
+    top: 340rem;
+    left: 13vw;
+}
+
+#virus21 {
+    top: 376rem;
+    left: 37vw;
+}
+
+#virus22 {
+    top: 349rem;
+    left: 68vw;
+}
+
+#virus23 {
+    top: 379rem;
+    left: 58vw;
+}
+
+#virus24 {
+    top: 394rem;
+    left: 19vw;
+}
+
+#virus25 {
+    top: 420rem;
+    left: 27vw;
+}
+
+#virus26 {
+    top: 440rem;
+    left: 67vw;
+}
+
+#virus27 {
+    top: 465rem;
+    left: 10vw;
+}
+
+#virus28 {
+    top: 480rem;
+    left: 59vw;
+}
+
+#virus29 {
+    top: 499rem;
+    left: 24vw;
+}
+
+#virus30 {
+    top: 540rem;
+    left: 59vw;
+}
+/* FIM POSITIONS */
+
+@media (min-width: 1400px) and (max-width: 1800px) {
+    #virus28,
+    #virus29,
+    #virus30 {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    #virus27,
+    #virus28,
+    #virus29,
+    #virus30 {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #virus27,
+    #virus28,
+    #virus29,
+    #virus30 {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #virus28,
+    #virus29,
+    #virus30 {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    #virus29,
+    #virus30 {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    #virus29,
+    #virus30 {
+        display: none;
+    }
+}

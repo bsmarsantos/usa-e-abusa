@@ -1,0 +1,75 @@
+/* MENU */
+.navbar > .container-fluid {
+    background-color: var(--azul-claro);
+    border-radius: 20rem;    
+}
+
+.nav-bar {
+    position: relative;
+    background-color: transparent;
+    padding: 25px;    
+}
+
+.navbar-toggler {    
+    padding: 1rem;
+    border-radius: 50rem;
+    border: .3rem solid var(--azul-escuro) !important;
+}
+
+.navbar-toggler-icon {    
+    width: 2.5rem;
+    height: 2.5rem;    
+}
+
+.navbar-toggler-icon > svg > path {
+    fill: var(--azul-escuro);
+}
+
+.nav-menu-left,
+.nav-menu-left a, 
+.nav-menu-left h1 {
+    float: left;   
+}
+
+.nav-menu-left,
+.nav-menu-left * { /* PARA SER APLICADO A TODOS OS FILHOS */
+    background-color: transparent;
+}
+
+.nav-menu-left .logo img{
+    width: 50px;
+    height: auto;    
+}
+
+.navbar-brand {
+    color: var(--azul-escuro) !important;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.nav-menu-right {
+    float: right;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.nav-menu-list {
+    list-style-type: none;
+}
+
+.nav-menu-item {
+    float: left;
+    margin-right: 25px;
+}
+
+.nav-menu-item a {
+    text-decoration: none;    
+}
+
+.nav-link {
+    color: var(--azul-escuro) !important;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+/* FIM MENU */

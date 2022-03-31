@@ -1,0 +1,139 @@
+.modal-content {
+    background-color: var(--azul-escuro);
+}
+
+.modal-body {
+    min-height: 40rem;
+}
+
+.modal-footer {
+    background-color: var(--azul-claro);
+}
+
+.modal-footer img {
+    width: 100%;
+    height: auto;
+}
+
+.modal-footer ul li {
+    list-style: none;
+}
+
+.modal-footer a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* MASCARAS */
+.mascaras {
+    padding: 5rem;
+}
+
+.mascaras img{
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    padding: 1rem;
+    background-color: var(--verde-escuro);
+    border-radius: 50rem;
+}
+
+.mascaras img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    background-color: var(--rosa);
+    transition: all .2s ease-in-out;
+}
+
+.mascaras .active {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    background-color: var(--rosa);    
+}
+/* FIM MASCARAS */
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .modal-footer a {
+        font-size: 1rem;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .modal-footer img {
+        max-width: 30rem;
+    }
+
+    .modal-footer .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .modal-footer .col-12:first-child {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2.5rem;
+    }
+
+    .modal-footer a {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .mascaras {
+        padding: 0;
+    }
+
+    .modal-footer img {
+        max-width: 25rem;
+    }
+
+    .modal-footer .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .modal-footer .col-12:first-child {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2.5rem;
+    }
+
+    .modal-footer a {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .mascaras {
+        padding: 0;
+    }
+
+    .modal-footer img {
+        max-width: 20rem;
+    }
+
+    .modal-footer .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .modal-footer .col-12:first-child {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2.5rem;
+    }
+
+    .modal-footer a {
+        margin-top: 0;
+    }
+}

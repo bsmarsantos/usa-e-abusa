@@ -1,0 +1,259 @@
+<!-- Modal -->
+<div class="modal fade" id="modalDonation" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-fullscreen-xxl-down modal-dialog-centered">
+        <div class="modal-content">         
+            <div class="modal-header">
+                <h4 class="modal-title">Ajuda a causa</h4>
+                <button type="button" class="btn-close pe-5" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <ul class="nav nav-tabs" id="donationTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="moneyTab" data-bs-toggle="tab" href="#tabMoney" role="tab" aria-controls="home" aria-selected="true">Dinheiro</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="productTab" data-bs-toggle="tab" href="#tabProducts" role="tab" aria-controls="profile" aria-selected="false">Produtos</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="laborTab" data-bs-toggle="tab" href="#tabVoluntary" role="tab" aria-controls="voluntary" aria-selected="false">Voluntariado</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <form action="">
+                            <div class="row p-5">
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="helpFormName" placeholder="João Lopes" required>
+                                        <label for="helpFormName">Nome</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="helpFormEmail" placeholder="joao.lopes@dominio.pt" required>
+                                        <label for="helpFormEmail">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control" id="helpFormContact" placeholder="931 456 789" required>
+                                        <label for="helpFormContact">Contacto</label>
+                                    </div>
+                                </div>
+                            </div>                        
+                            <div class="d-none tab-pane fade show active" id="tabMoney" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row px-5">
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12">
+                                                <h4>Quantia</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4 col-sm-4">
+                                                <input type="radio" id="helpFormAmount5" name="helpFormAmount" checked> 
+                                                <label class="text-center" for="helpFormAmount5">5€</label>                                                
+                                            </div>
+                                            <div class="col-4 col-sm-4">
+                                                <input type="radio" id="helpFormAmount10" name="helpFormAmount"> 
+                                                <label class="text-center" for="helpFormAmount10">10€</label>
+                                            </div>
+                                            <div class="col-4 col-sm-4">
+                                                <input type="radio" id="helpFormAmount20" name="helpFormAmount"> 
+                                                <label class="text-center" for="helpFormAmount20">20€</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4 col-sm-4">
+                                                <input type="radio" id="helpFormAmount50" name="helpFormAmount"> 
+                                                <label class="text-center" for="helpFormAmount50">50€</label>
+                                            </div>
+                                            <div class="col-4 col-sm-4">
+                                                <input type="radio" id="helpFormAmount100" name="helpFormAmount"> 
+                                                <label class="text-center" for="helpFormAmount100">100€</label>
+                                            </div>
+                                            <div class="col-4 col-sm-4">
+                                                <input type="radio" id="helpFormAmount200" name="helpFormAmount"> 
+                                                <label class="text-center" for="helpFormAmount200">200€</label>
+                                            </div>
+                                        </div>                                
+                                        <div class="row">
+                                            <div class="col-4 col-sm-4">
+                                                <input type="radio" id="helpFormAmountOutro" name="helpFormAmount"> 
+                                                <label class="text-center" for="helpFormAmountOutro">Outro</label>
+                                            </div>
+                                            <div class="col-8 col-sm-8 pt-4">
+                                                <div class="form-floating">
+                                                    <input type="tel" class="form-control" id="helpFormAmountOutroValue" onfocus='$("#helpFormAmountOutro").prop("checked", true);' placeholder="1000€">
+                                                    <label for="helpFormAmountOutroValue">Outro Valor</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12">
+                                                <h4>Mét. de pagamento</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 col-sm 6">
+                                                <input type="radio" id="helpFormPaymentMethodMBWAY" name="helpFormPaymentMethod" checked> 
+                                                <label class="text-center" for="helpFormPaymentMethodMBWAY" data-bs-toggle="tooltip" data-bs-placement="bottom" title="MB WAY">MB WAY</label> 
+                                            </div>
+                                            <div class="col-6 col-sm 6">
+                                                <input type="radio" id="helpFormPaymentMethodRefMB" name="helpFormPaymentMethod"> 
+                                                <label class="text-center" for="helpFormPaymentMethodRefMB" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Referência MB">REF. MB</label> 
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 col-sm 6">
+                                                <input type="radio" id="helpFormPaymentMethodVisa" name="helpFormPaymentMethod"> 
+                                                <label class="text-center" for="helpFormPaymentMethodVisa" data-bs-toggle="tooltip" data-bs-placement="bottom" title="VISA">VISA</label> 
+                                            </div>
+                                            <div class="col-6 col-sm 6">
+                                                <input type="radio" id="helpFormPaymentMethodPaypal" name="helpFormPaymentMethod"> 
+                                                <label class="text-center" for="helpFormPaymentMethodPaypal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Paypal">PAYPAL</label> 
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 col-sm 6">
+                                                <input type="radio" id="helpFormPaymentMethodDebito" name="helpFormPaymentMethod"> 
+                                                <label class="text-center" for="helpFormPaymentMethodDebito" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Débito Direto">DÉB. D.</label> 
+                                            </div>
+                                            <div class="col-6 col-sm 6">
+                                                <input type="radio" id="helpFormPaymentMethodTransferencia" name="helpFormPaymentMethod"> 
+                                                <label class="text-center" for="helpFormPaymentMethodTransferencia" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Transferência Bancária">TRANSF.</label> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-4">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12">
+                                                <h4>Periodo de Doação</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 col-sm-6">
+                                                <input type="radio" id="helpFormPeriod" name="helpFormPeriod" checked> 
+                                                <label class="text-center" for="helpFormPeriod">Único</label> 
+                                            </div>
+                                            <div class="col-6 col-sm-6">
+                                                <input type="radio" id="helpFormPeriodMonthly" name="helpFormPeriod"> 
+                                                <label class="text-center" for="helpFormPeriodMonthly">Mensal</label> 
+                                            </div>
+                                        </div>                                                                                
+                                    </div>
+                                </div>
+                                <div class="row py-5 px-5">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 text-end">
+                                            <a href="#" onclick="alert('OBRIGADO PELO TEU APOIO!')" data-bs-dismiss="modal" aria-label="Close" class="btn btn-primary align-self-end">Doar</a>            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none tab-pane fade" id="tabProducts" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row px-5">
+                                    <div class="col-12 col-sm-12">
+                                        <h4>Produto a doar</h4>
+                                    </div>
+                                </div>
+                                <div class="row px-5">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-4">
+                                                <input type="checkbox" id="helpFormProductMascara" name="helpFormProduct" checked> 
+                                                <label class="text-center" for="helpFormProductMascara">Máscaras</label> 
+                                            </div>
+                                            <div class="col-4 col-sm-4">
+                                                <input type="checkbox" id="helpFormProductViseira" name="helpFormProduct"> 
+                                                <label class="text-center" for="helpFormProductViseira">Viseiras</label>                                             
+                                            </div>
+                                            <div class="col-4 col-sm-4">
+                                                <input type="checkbox" id="helpFormProductGel" name="helpFormProduct" > 
+                                                <label class="text-center" for="helpFormProductGel">Gel Antisséptico</label> 
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="col-12 offset-sm-3 col-sm-3">
+                                        <div class="form-floating pt-3">
+                                            <input type="number" class="form-control" id="helpFormQuantidade" placeholder="10" min="1">
+                                            <label for="helpFormQuantidade">Quantidade</label>
+                                        </div>
+                                    </div>                                  
+                                </div>
+                                <div class="row pt-5 px-5">
+                                    <h5>* Ao submeter irá ser contactado por um dos nossos colaboradores para agilizar o processo de entrega dos artigos a doar.</h5>
+                                </div>
+                                <div class="row pt-5 px-5">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 text-end">
+                                            <a href="#" onclick="alert('OBRIGADO PELO TEU APOIO!')" data-bs-dismiss="modal" aria-label="Close" class="btn btn-primary align-self-end">Doar*</a>            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none tab-pane fade" id="tabVoluntary" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="row px-5">
+                                    <h4>Dados Pessoais</h4>
+                                </div>
+                                <div class="row px-5">
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control" id="helpFormIdade" placeholder="18" min="16" max="80">
+                                            <label for="helpFormIdade">Idade</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="formHelpDistrito" aria-label="Escolhe o teu distrito">                                                
+                                                <option value="1">Aveiro</option>
+                                                <option value="2">Beja</option>
+                                                <option value="3">Braga</option>
+                                                <option value="4">Bragança</option>
+                                                <option value="5">Castelo Branco</option>
+                                                <option value="6">Coimbra</option>
+                                                <option value="7">Évora</option>
+                                                <option value="8">Faro</option>
+                                                <option value="9">Guarda</option>
+                                                <option value="10">Leiria</option>
+                                                <option value="11">Lisboa</option>
+                                                <option value="12">Portalegre</option>
+                                                <option value="13">Porto</option>
+                                                <option value="14">Santarém</option>
+                                                <option value="15">Setúbal</option>
+                                                <option value="16">Viana do Castelo</option>
+                                                <option value="17">Vila Real</option>
+                                                <option value="18">Viseu</option>
+                                            </select>
+                                            <label for="formHelpDistrito">Escolhe o teu distrito</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-5 px-5">
+                                    <div class="col-12 col-sm-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Motivo pelo qual te queres juntar" id="helpFormMensagem"></textarea>
+                                            <label for="helpFormMensagem">Motivo pelo qual te queres juntar</label>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-5 px-5">
+                                    <h5>* Ao submeter irás ser contactado por um dos nossos colaboradores para marcarmos uma entrevista.</h5>
+                                </div>
+                                <div class="row py-5 px-5">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 text-end">
+                                            <a href="#" onclick="alert('OBRIGADO PELO TEU APOIO!')" data-bs-dismiss="modal" aria-label="Close" class="btn btn-primary align-self-end">Candidatar-me</a>            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>                        
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+</div>

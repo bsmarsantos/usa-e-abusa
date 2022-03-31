@@ -1,0 +1,295 @@
+/* SECTION INICIO */
+
+#sectionInicio .row:nth-child(1) {
+    padding-top: 10rem;
+}
+
+#sectionInicio .row:nth-child(2) {
+    padding-top: 5rem;
+}
+
+#sectionInicio .row:nth-child(3) {
+    margin-top: -1rem;
+}
+
+/* FIM SECTION INICIO */
+
+/* SECTION SINTOMAS */
+#sectionSintomas .row:nth-child(1) {
+    padding-top: 10rem;
+}
+
+#sectionSintomas .row:nth-child(2) {
+    padding-top: 10rem;
+}
+
+.sintomas-text-box {
+    position: absolute;
+    bottom: 9rem;
+    left: 14rem;
+    width: 22rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sintomas-text {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.round {
+    position: relative;
+    width: 50rem;
+    height: 50rem;
+    padding: 10rem;
+    border-radius: 50rem;
+    border-style: dashed;
+}
+
+.round .active {
+    background-color: var(--verde-claro);
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.inside-round {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    padding: 2rem;
+    border-radius: 50rem;
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+.inside-round:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all .2s ease-in-out;
+}
+
+.inside-round img {
+    transform: scale(1.8);
+}
+
+.inside-round:nth-child(2) {
+    top: -5rem;
+    left: 20rem;
+}
+.inside-round:nth-child(3) {
+    top: 3rem;
+    left: 2rem;
+}
+.inside-round:nth-child(4) {
+    top: 3rem;
+    left: 38rem;
+}
+.inside-round:nth-child(5) {
+    top: 20rem;
+    left: -5rem;
+}
+.inside-round:nth-child(6) {
+    top: 20rem;
+    left: 45rem;
+}
+.inside-round:nth-child(7) {
+    top: 37rem;
+    left: 2rem;
+}
+.inside-round:nth-child(8) {
+    top: 37rem;
+    left: 38rem;
+}
+.inside-round:nth-child(9) {
+    top: 45rem;
+    left: 20rem;
+}
+/* FIM SECTION SINTOMAS */
+
+/* SECTION TRANSMISSAO */
+
+#sectionTransmissao .row:nth-child(1) {
+    padding-top: 10rem;
+}
+
+#sectionTransmissao .row:nth-child(2) {
+    padding-top: 10rem;
+}
+
+/* FIM SECTION TRANSMISSAO */
+
+/* SECTION EPI */
+
+#sectionEPI .row:nth-child(1) {
+    padding-top: 10rem;
+}
+
+#sectionEPI .row:nth-child(2) {
+    padding-top: 5rem;
+}
+
+#sectionEPI .row:last-child {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sectionEPI .row:last-child a {
+    max-width: 28rem;
+}
+
+/* FIM SECTION EPI */
+
+/* SECTION MOVIMENTO */
+
+#sectionMovimento .row:nth-child(1) {
+    padding-top: 10rem;
+}
+
+#sectionMovimento .row:nth-child(2) {
+    padding-top: 10rem;
+}
+
+/* FIM SECTION MOVIMENTO */
+
+@media (min-width: 1200px) and (max-width: 1400px){
+    .section-slideshow {        
+        height: 70rem;
+    }
+
+    #sectionInicio,
+    #sectionSintomas {
+        height: 80rem;
+    }
+
+    #sectionEPI,
+    #sectionMovimento {
+        height: 70rem;
+    }
+    
+    #sectionTransmissao {
+        height: 55rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+    .section-slideshow {        
+        height: 70rem;
+    }
+
+    #sectionInicio,
+    #sectionSintomas {
+        min-height: 80rem;
+    }
+
+    #sectionEPI,
+    #sectionMovimento {
+        min-height: 70rem;
+    }
+    
+    #sectionTransmissao {
+        min-height: 55rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .section-slideshow {
+        padding-top: 25rem;
+        height: 60rem;
+    }
+
+    #sectionInicio,
+    #sectionSintomas {
+        height: 80rem;
+    }
+
+    #sectionEPI,
+    #sectionMovimento {
+        height: 70rem;
+    }
+    
+    #sectionTransmissao {
+        height: 55rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .section-slideshow {
+        padding-top: 25rem;
+        height: 70rem;
+    }
+
+    #sectionInicio,
+    #sectionSintomas,
+    #sectionEPI {
+        height: 80rem;
+    }
+        
+    #sectionMovimento {
+        height: 70rem;
+    }
+    
+    #sectionTransmissao {
+        height: 55rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .section-slideshow {
+        padding-top: 25rem;
+        height: 70rem;
+    }
+
+    #sectionSintomas {
+        height: 90rem;  
+    }
+     
+    #sectionTransmissao  {
+        height: 80rem;
+    }
+
+    #sectionInicio,
+    #sectionEPI,
+    #sectionMovimento {
+        height: 70rem;
+    }
+
+    #sectionMovimento .row:last-child div:last-child {
+        padding: 0 0 0 2.5rem;
+    }
+
+    #sectionMovimento .row:last-child div:last-child a {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-slideshow {
+        padding-top: 20rem;
+        height: 60rem;        
+    }
+
+    #sectionSintomas {
+        height: 90rem;  
+    }
+
+    #sectionInicio,
+    #sectionTransmissao,
+    #sectionMovimento {
+        height: 80rem;
+    }
+    
+    #sectionEPI {
+        height: 70rem;
+    }
+
+    #sectionMovimento .row:last-child div:last-child {
+        padding: 0 5rem 0 2.5rem;
+    }
+
+    #sectionMovimento .row:last-child div:last-child a {
+        margin-top: 2.5rem;
+    }
+}
